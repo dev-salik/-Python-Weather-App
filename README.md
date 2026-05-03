@@ -32,7 +32,7 @@ A simple command-line weather app built with Python that shows real-time weather
 Enter any city name when prompted.
 Type 'q' to quit.
 
-## Sample Output
+Sample Output
 ===================================
   Mumbai, IN
 ===================================
