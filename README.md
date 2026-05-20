@@ -9,8 +9,9 @@ A simple command-line weather app built with Python that shows real-time weather
 - Supports any city worldwide
 
 ## Requirements
-- Python 3.x
-- `requests` library
+```
+  pip install requests
+```
 
 ## Setup
 
