@@ -11,6 +11,7 @@ A simple command-line weather app built with Python that shows real-time weather
 ## Requirements
 ```
   pip install requests
+
 ```
 
 ## Setup
@@ -19,14 +20,12 @@ A simple command-line weather app built with Python that shows real-time weather
    git clone https://github.com/dev-salik/-Python-Weather-App.git
    cd -Pyhton-Weather-App
 
-2. Install dependency
-   pip install requests
 
-3. Add your API key
+2. Add your API key
    - Get a free key from https://openweathermap.org/api
    - Open `weather.py` and replace `YOUR_API_KEY` with your key
 
-4. Run the app
+3. Run the app
    python weather.py
 
 ## Usage
