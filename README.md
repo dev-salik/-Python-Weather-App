@@ -16,8 +16,8 @@ A simple command-line weather app built with Python that shows real-time weather
 ## Setup
 
 1. Clone the repo
-   git clone https://github.com/salikkk/weather-app.git
-   cd weather-app
+   git clone https://github.com/dev-salik/-Python-Weather-App.git
+   cd -Pyhton-Weather-App
 
 2. Install dependency
    pip install requests
