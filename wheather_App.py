@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "Enter Your API_KEY"
+API_KEY = "Enter YOUR_API"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 def get_weather(city):
@@ -24,23 +24,26 @@ def get_weather(city):
         condition   = data["weather"][0]["description"]
         wind_speed  = data["wind"]["speed"]
         
-        print("\n" + "="*35)
-        print(f"  {city_name}, {country}")
-        print("="*35)
+        print("=================================")
+        print(f"       {city_name}, {country}        ")
+        print("=================================")
         print(f"  Temperature  : {temp}°C")
         print(f"  Feels like   : {feels_like}°C")
         print(f"  Condition    : {condition.capitalize()}")
         print(f"  Humidity     : {humidity}%")
         print(f"  Wind speed   : {wind_speed} m/s")
-        print("="*35 + "\n")
+        print("================================")
     
     elif response.status_code == 404:
         print(f"\n[Error] '{city}' City Not found.\nPlease Enter Valid City Name\n-----------------------------")
 
 
 def main():
-    print("\n=== Python Weather App ===")
+    print("=================================")
+    print("         Python Weather App")
+    print("=================================")
     print(" ")
+    print("If want quit press 'q'.\n")
     while True:
         city = input("Enter Your City Name:\n> ").strip()
 
@@ -49,7 +52,7 @@ def main():
             break
         if city:
             get_weather(city)
-            print("If want quit press 'q'. ")
+            break
 
 if __name__ == "__main__":
     main()
